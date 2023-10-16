@@ -14,8 +14,8 @@ A simple app that loads fruit data from fruityvice.com and displays to a web pag
 1 - Clone the repository
 
 ```
-cd ~/Sites
-git clone ssh://git@github.com:mjbdelacruz/FruityApp.git
+git clone git@github.com:mjbdelacruz/FruityApp.git
+cd FruityApp/
 ```
 
 2 - Run composer
@@ -32,9 +32,10 @@ DATABASE_URL_READ="mysql://db_user:db_password@127.0.0.1:3306/fruityvice?serverV
 DATABASE_URL_WRITE="mysql://db_user:db_password@127.0.0.1:3306/fruityvice?serverVersion=5.7"
 
 // Configure mailer:
+
 // Specify sender and receiver email by changing MAILER_TO and MAILER_FROM.
-// Also specify MAILER_FROM's App password to MAILER_FROM_APP_PASSWORD
-// NOTE: Do not use your Gmail's password as it won't work. You can generate an App Password by following the steps here https://support.google.com/accounts/answer/185833
+// NOTE: Do not use your Gmail's password on MAILER_FROM_APP_PASSWORD as it won't work. 
+// You can generate an App Password by following the steps here https://support.google.com/accounts/answer/185833
 
 MAILER_TO="testTo@gmail.com"
 MAILER_FROM="testFrom@gmail.com"
