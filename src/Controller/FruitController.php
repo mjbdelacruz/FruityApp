@@ -105,7 +105,7 @@ class FruitController extends AbstractController
 
             $this->fruitService->addToFavorite($fruit);
 
-            $this->addFlash('add_to_favorites_success', 'Fruit Successfully added to favorites.');
+            $this->addFlash('add_to_favorites_success', sprintf('Successfully added %s to favorites', $fruit->getName()));
         } catch (EntityLimitException $exception) {
             $this->addFlash('add_to_favorites_error', $exception->getMessage());
         }
