@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Data Tables -->
+    <link href="/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="/css/fixedColumns.dataTables.min.css" rel="stylesheet">
+    {% block stylesheets %}{% endblock %}
+</head>
+
+{% block body %}{% endblock %}
+
+<div class="row p-2">
+    <div class="col text-center small">
+        <span class="text-muted">© {{ "now"|date("Y") }} Fruity App. All Rights Reserved.</span>
+    </div>
+</div>
+<script type="text/javascript" src="/script/jquery-3.7.0.js"></script>
+<script type="text/javascript" src="/script/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="/script/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/script/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="/script/dataTables.fixedColumns.min.js"></script>
+{% block javascripts %}{% endblock %}
+</body>
+</html>
+

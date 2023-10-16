@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="/var/www/html.wrs/app-authehr" vcs="Git" />
+    <mapping directory="/var/www/html.wrs/app-fax-manager" vcs="Git" />
+  </component>
+</project>

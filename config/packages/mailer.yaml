@@ -1,0 +1,3 @@
+framework:
+    mailer:
+        dsn: 'gmail://%env(MAILER_FROM)%:%env(MAILER_FROM_APP_PASSWORD)%@default?verify_peer=0'
